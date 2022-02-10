@@ -30,6 +30,7 @@ public class ProductService {
 	
 	public void updateProduct(long id, Product product){
 //		productRepository.save(product);
+		
 		Product existingProduct = productRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Product not found to update with id :" + id));
 		existingProduct.setName(product.getName());
