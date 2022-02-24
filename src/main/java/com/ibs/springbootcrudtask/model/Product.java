@@ -12,6 +12,7 @@ public class Product {
 	private String description;
 	private double price;
 
+
 	public long getId() {
 		return id;
 	}
